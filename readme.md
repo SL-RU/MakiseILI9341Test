@@ -4,6 +4,10 @@ https://github.com/SL-RU/MakiseGUI
 
 MakiseGUI - graphical library for embed applications. It's fully written on C and can be ported anywhere. This test developed for stm32 mcu and display based on ili9341.
 
+Video:
+
+https://www.youtube.com/watch?v=PjL4AB-iLRY
+
 # Platform
 *  MCU: STM32F437
 *  DISPLAY: ILI9341 based 2.2inch 320x240
