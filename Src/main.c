@@ -71,7 +71,7 @@ void Error_Handler(void);
 #define K_TAB 9
 #define K_MINUS 45
 #define K_EQUALS 61
-#define K_BACKSPACE 6
+#define K_BACKSPACE 8
 void inp(uint8_t i) //key from uart handler
 {
     switch (i) {
@@ -109,20 +109,21 @@ void inp(uint8_t i) //key from uart handler
 	makise_gui_input_send_button(host,
 				     M_KEY_USER_ESC,
 				     M_INPUT_CLICK, 100);
+	break;
     case K_MINUS:	
 	makise_gui_input_send_button(host,
 				     M_KEY_USER_FOCUS_PREV,
 				     M_INPUT_CLICK, 100);
+	break;
     case K_EQUALS:	
 	makise_gui_input_send_button(host,
 				     M_KEY_USER_FOCUS_NEXT,
 				     M_INPUT_CLICK, 100);
-
+	break;
     case K_BACKSPACE:	
 	makise_gui_input_send_button(host,
 				     M_KEY_USER_TREE,
 				     M_INPUT_CLICK, 100);
-
 	break;
 default:
 	break;
