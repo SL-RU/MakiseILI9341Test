@@ -21,6 +21,7 @@ git submodule update
 mkdir build; cd build
 cmake ..
 make
+#flash to mcu
 ```
 
 # Info
